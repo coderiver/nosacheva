@@ -1,73 +1,736 @@
 // Normally mainpage styles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+html
+	font-size: 62.5%
+
+.out
+	width: 100%
+	max-width: 1600px
+	min-width: 1024px
+	position: relative
+//TOP
+.top
+	width: 100%
+	background: url(../img/top.png)
+	position: fixed
+	top: 0px
+	left: 0px
+	right: 0px
+	z-index: 9999
+	text-align: center
+.top__block
+	width: 940px
+	margin: 0 auto
+	padding: 10px 10px 15px 10px
+	color: white
+	+clr
+	h5
+		margin-top: -4px
+		+fs(28)
+		+ttransform
+		+heliosbold
+		font-weight: normal
+	.button-purple
+		margin: 0 auto
+		display: inline-block
+		z-index: 999
+		margin-top: 12px
+		padding-top: 3px
+		height: 35px
+.top__left
+	float: left
+	line-height: 29px
+	span
+		+fs(20)
+		+helioslight
+.top__right
+	float: right
+	line-height: 30px
+	span
+		+fs(13)
+		+helioslight
+
+
+//HEADER - FIRST SECTION
+.header
+	width: 100%
+	height: 685px
+	clear: both
+	+clr
+	background: url(../img/header-photo.png) no-repeat center top
+.header__block
+	margin: 0 auto
+	width: 940px
+	color: white
+	position: relative
+	+clr
+.header__info
+	text-align: left
+	margin-top: 220px
+	width: 460px
+	float: right
+	h1
+		+fs(58)
+		+ptserif
+		font-weight: normal
+		line-height: 48px
+		margin-bottom: 30px
+	h5
+		+fs(28)
+		+helioslight
+		font-weight: normal
+		margin: 0 auto
+		display: block
+		line-height: 30px
+	.button-purple
+		border-radius: 30px
+		box-shadow: 0 3px 9px rgba(1,1,1,.47)
+		+fs(23)
+		line-height: 42px
+		height: 51px
+		padding: 7px 30px 0px 35px
+		display: inline-block
+		margin-top: 65px
+//END HEADER
+
+//SECOND SECTION
+.second
+	float: left
+	width: 100%
+	background: white
+	+clr
+	text-align: center
+	padding-bottom: 71px
+	padding-top: 72px
+	h2
+		+fs(48)
+		+ptserif
+		color: #5b38e0
+		line-height: 42px
+		margin-top: 35px
+		font-weight: normal
+		width: 90%
+		padding: 0px 5% 0px 5%
+	h5
+		+fs(28)
+		+helios
+		color: #909090
+		line-height: 42px
+		font-weight: normal
+		padding: 0px 5% 0px 5%
+.second__block
+	margin: 0 auto
+	width: 940px
+.second__icon-h
+	display: block
+	margin: 0 auto
+	+s(second__icon-h)
+	position: relative
+	i
+		display: block
+		position: absolute
+		top: 20px
+		left: 20%
+		right: 20%
+.star
+	i
+		+s(star)
+.second__row
+	width: 100%
+	+clr
+	clear: both
+	margin-top: 30px
+.second__col
+	display: inline-block
+	vertical-align: top
+	width: 310px
+	.second__img
+		width: 192px
+		height: 192px
+		border-radius: 50%
+		overflow: hidden
+		margin: 0 auto
+	.second__name
+		color: #4e4a4a
+		+helios
+		+fs(16)
+		line-height: 42px
+	p
+		color: #7d7d7d
+		+ptserif
+		+fs(20)
+		line-height: 21px
+	.second__line
+		margin: 0 auto
+		display: block
+		width: 60px
+		border-bottom: 4px solid #e75b39
+		margin-top: 17px
+		
+.like
+	i
+		+s(like)
+
+//second mod
+.second_mod
+	background: #fbfbfb
+	border-top: solid 1px #f4f4f4
+	border-bottom: solid 1px #f4f4f4
+	.second__col
+		width: 211px
+		margin: 30px 10px
+		color: #4f4b4b
+		line-height: 21px
+		span
+			+fs(16)
+			+helios
+			.second__subheading
+				+ptserifbold
+				+fs(18)
+				display: block
+		.second__number
+			background: #e75b39
+			margin: 0 auto
+			color: white
+			+helios
+			+fs(33)
+			line-height: 42px
+			border-radius: 50%
+			display: block
+			text-align: center
+			padding: 5px 6px 6px 6px
+			width: 40px
+			margin-bottom: 18px
+//second
+.eye
+	i
+		margin-top: 9px
+		margin-left: 1px
+		+s(eye)
+.second__row
+	ul
+		li
+			width: 890px
+			padding: 30px 22px 22px 28px
+			vertical-align: middle
+			line-height: 21px
+			+clr
+			+fs(20)
+			.second__list-left
+				float: left
+				width: 285px
+				text-align: left
+				span
+					+ptserifbold
+					color: #4f4b4b
+				p
+					color: #7d7d7d
+			.second__arrow
+				float: left
+				width: 300px
+				padding-top: 18px
+				vertical-align: middle
+				span
+					display: inline-block
+			.second__list-right
+				float: right
+				width: 305px
+				text-align: right
+				p
+					color: #4f4b4b
+					+fs(16)
+					+helios
+		.mod
+			background: #f8f8f8
+
+//PROGRAMM - third section
+
+.programm
+	width: 100%
+	+clr
+	background: url(../img/programm.png) no-repeat top center
+	text-align: center
+	float: left
+.programm__block
+	margin: 0 auto
+	width: 940px
+	padding-top: 60px
+	padding-bottom: 45px
+	+clr
+	h2
+		+ptserif
+		+fs(43)
+		color: white
+		line-height: 42px
+	.programm__date
+		+helios
+		+fs(24)
+		color: #e85b39
+		line-height: 21px
+		margin-top: 20px
+		display: block
+		margin-bottom: 3px
+	p
+		line-height: 21px
+		+helios
+		+fs(16)
+		color: white
+		width: 810px
+		margin: 0 auto
+	.button-purple
+		+fs(23)
+		line-height: 42px
+		border-radius: 30px
+		box-shadow: 0 3px 9px rgba(1,1,1,.47)
+		height: 51px
+		display: inline-block
+		padding: 7px 25px 0px 25px
+		margin-top: 50px
+.programm__col
+	float: left
+	width: 220px
+	margin-top: 50px
+	margin-right: 20px
+	.programm__day
+		display: block
+		width: 100%
+		text-align: center
+		background: #e85b39
+		color: white
+		+fs(24)
+		+helios
+		line-height: 30px
+		padding-bottom: 3px
+	ul
+		width: 100%
+		padding-top: 25px
+		li
+			width: 100%
+			color: white
+			+fs(16)
+			+helios
+			line-height: 21px
+			border-bottom: 1px solid #5f5a6f
+			text-align: left
+			padding: 10px 0px
+			span
+				+fs(14)
+				+heliosbold
+				float: left
+				width: 53px
+				margin-top: -1px
+		.is-last
+			border: none
+//programm form
+.programm__form
+	width: 100%
+	background: #e85b39
+	padding: 40px 0px
+	form
+		width: 940px
+		margin: 0 auto
+		display: block
+		text-align: left
+		+clr
+		input
+			width: 178px
+			margin-right: 20px
+			float: left
+			border: 1px solid white
+			border-radius: 30px
+			padding: 13px 20px 12px 20px
+			background: white
+			+fs(23)
+			+helios
+			line-height: 1.4
+			color: #7d7d7d
+		.programm__submit
+			margin-right: 0px
+			color: white
+			width: 220px
+			padding: 13px 0px 12px 0px
+			background: #e85b39
+//review
+.message
+	i
+		+s(message)
+		margin-top: 5px
+		margin-left: 2px
+.review__col
+	+helios
+	width: 235px
+	float: left
+	border: 1px solid #e85b39
+	padding: 30px 28px 30px 25px
+	margin-right: 20px
+	margin-bottom: 30px
+	min-height: 122px
+	h2
+		color: #e85b39
+		line-height: 40px
+		+helios
+		margin-top: 0px
+		margin-bottom: 10px
+	p
+		color: #4f4b4b
+		+fs(22)
+		line-height: 24px
+.review__comments
+	display: block
+	float: left
+	width: 440px
+	padding-right: 30px
+	margin-top: 5px
+	.review__avatar
+		width: 106
+		height: 106
+		border-radius: 50%
+		float: left
+		margin-right: 35px
+	.review__info
+		line-height: 21px
+		padding-top: 5px
+		text-align: left
+		float: left
+		width: 299px
+		.review__name
+			+helios
+			+fs(16)
+			color: #4f4b4b
+			margin-bottom: 8px
+			display: block
+		p
+			+ptserif
+			+fs(20)
+			color: #7d7d7d
+		.second__line
+			display: block
+			width: 60px
+			border-bottom: 4px solid #e75b39
+			margin-top: 17px
+.is-right
+	float: right
+//review-2
+.hat
+	i
+		+s(hat)
+		margin-top: 6px
+.review__row
+	width: 100%
+	+clr
+	clear: both
+	margin-top: 30px
+.carousel
+	width: 100%
+	position: relative
+	.carousel__block
+		float: left
+		width: 100%
+		overflow: hidden
+		.carousel__item
+			float: left
+			width: 220px
+			margin-right: 20px
+			text-align: center
+			a
+				float: left
+				display: block
+				width: 100%
+				text-decoration: none
+				img
+					display: block
+					margin: 0 auto
+				span
+					color: #4f4b4b
+					+fs(16)
+					line-height: 21px
+					+helios
+					width: 220px
+					display: block
+					float: left
+					white-space: normal
+	.carousel__button
+		position: absolute
+		top: 80px
+		z-index: 9999
+		cursor: pointer
+	#carousel__prev
+		left: -22px
+		+s(prev)
+	#carousel__next
+		right: -22px
+		+s(next)
+		
+//review 3
+.camera
+	i
+		+s(camera)
+		margin-top: -1px
+		margin-left: 2px
+.review__video
+	width: 300px
+	margin-right: 20px
+	text-align: center
+	float: left
+	p
+		width: 280px
+		display: block
+		margin: 0 auto
+		+ptserif
+		+fs(20)
+		line-height: 21px
+		color: #7d7d7d
+		margin-top: 20px
+	.review__line
+		margin: 0 auto
+		display: block
+		width: 60px
+		border-bottom: 4px solid #e75b39
+		margin-top: 20px
+//price
+.price
+	float: left
+	+clr
+	width: 100%
+	background: url(../img/price.png) no-repeat top center
+.price__block
+	width: 940px
+	margin: 0 auto
+	padding-top: 60px
+	padding-bottom: 45px
+	+clr
+	h2
+		+fs(48)
+		text-align: center
+		+ptserif
+		color: white
+		line-height: 42px
+		font-weight: normal
+		width: 90%
+		padding: 0px 5% 0px 5%
+		margin-bottom: 65px
+	.price__left
+		width: 530px
+		float: left
+		p
+			color: white
+			+fs(16)
+			line-height: 21px
+			+helios
+			span
+				color: #e85b39
+				+fs(24)
+	.price__right
+		float: right
+		width: 300px
+		ul
+			float: left
+			width: 100%
+			li
+				width: 150px
+				float: left
+				color: white
+				+helioslight
+				+fs(18)
+				span
+					+heliosbold
+					+fs(30)
+					line-height: 30px
+					position: relative
+					&:before
+						width: 10px
+						height: 2px
+						background: white
+						position: absolute
+						top: 23px
+						right: 5px
+						display: block
+						content: ""
+	.price__timer
+		display: block
+		width: 99.6%
+		height: 205px
+		margin-top: 47px
+		margin-bottom: 50px
+		float: left
+		+clr
+		border: 1px solid #2d294e
+		span
+			text-align: center
+			width: 100%
+			+helioslight
+			+fs(28)
+			color: white
+			line-height: 42px
+			margin-top: 20px
+			display: block
+		.price__time
+			position: relative
+			margin: 0 auto
+			width: 560px
+			+clr
+			.time__heading
+				display: block
+				float: left
+				clear: both
+				width: 100%
+				margin-top: 0px
+				font-size: 18px
+				line-height: 28px
+				color: white
+				+helioslight
+	.price__discount
+		float: left
+		width: 300px
+		color: white
+		+fs(28)
+		line-height: 30px
+		+helioslight
+		span
+			+heliosbold
+	.price__cash
+		float: left
+		width: 300px
+		button
+			display: block
+			margin: 0 auto
+			color: white
+			border: 1px solid white
+			width: 248px
+			height: 60px
+			border-radius: 30px
+			background: none
+			+helios
+			+fs(48)
+			line-height: 30px
+			span
+				position: relative
+				&:before
+					width: 15px
+					height: 3px
+					background: white
+					position: absolute
+					top: 36px
+					right: 10px
+					display: block
+					content: ""
+	.button-purple
+		float: right
+		width: 220px
+		height: 60px
+		+fs(23)
+		line-height: 42px
+		border-radius: 30px
+		margin-right: 40px
+//address
+.address
+	p
+		+helios
+		color: #4f4b4b
+		+fs(16)
+		line-height: 18px
+		margin-top: 10px
+//map
+.map
+	float: left
+	+clr
+	width: 100%		
+
+
+//		
+.is-last__col
+	margin-right: 0px
+
+//popup form
+.popup__form
+	position: fixed
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	background: url(../img/top.png)
+	z-index: 9999
+	min-width: 1024px
+	display: none
+	form
+		width: 565px
+		margin: 0 auto
+		margin-top: 10%
+		display: block
+		background: white
+		border-radius: 4px
+		padding: 30px 30px 50px 25px
+		box-shadow: 0 9px 21px rgba(0,1,1,.82)
+		h2
+			+fs(48)
+			+ptserif
+			color: #5b38e0
+			line-height: 42px
+			font-weight: normal
+			text-align: center
+			display: block
+			margin-bottom: 25px
+		input
+			width: 523px
+			border: 1px solid #b6b6b7
+			+helios
+			+fs(23)
+			line-height: 1.4
+			padding: 13px 20px 12px 20px
+			border-radius: 30px
+			margin-bottom: 20px
+		.popup__form-submit
+			display: block
+			margin: 0 auto
+			width: 190px
+			margin-top: 10px
+			height: 60px
+
+
+
+//popup thx
+.popup__thx
+	position: fixed
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	background: url(../img/top.png)
+	z-index: 9999
+	min-width: 1024px
+	display: none
+	.popup__thx-b
+		width: 565px
+		margin: 0 auto
+		margin-top: 10%
+		display: block
+		background: #e75b39
+		border-radius: 4px
+		padding: 30px 30px 50px 25px
+		color: white
+		text-align: center
+		box-shadow: 0 9px 21px rgba(0,1,1,.82)
+		h3
+			+fs(48)
+			+ptserif
+			line-height: 42px
+			font-weight: normal
+			text-align: center
+		i
+			+s(thx)
+			display: block
+			margin: 0 auto
+			margin-top: 35px
+			margin-bottom: 35px
+		p
+			+helioslight
+			+fs(28)
+			line-height: 36px
+			width: 90%
+			margin: 0 auto
+			display: block
+		span
+			+heliosbold
+			line-height: 36px
 
 
 

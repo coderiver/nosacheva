@@ -57,14 +57,57 @@ body
 // common blocks      
 
 
+//FONTS
+
++font("helios bold", helios-bold-webfont)
++font("helios light", helioslight-webfont)
++font("helios", helios-webfont)
+
++font("PTSerif", ptf55f)
++font("PTSerif bold", ptf75f)
+
+
+//mymixins
+
+//font
+=heliosbold
+	font-family: "helios bold", sans-serif
+=helioslight
+	font-family: "helios light", sans-serif
+=helios
+	font-family: "helios", sans-serif
+
+=ptserif
+	font-family: "PTSerif", sans-serif
+=ptserifbold
+	font-family: "PTSerif bold", sans-serif
+	
+//mod
+=ttransform
+	text-transform: uppercase
 
 
 
 
-
-
-
-
+//BUTTONS
+.button-purple
+	border-radius: 20px
+	box-shadow: 0 3px 9px rgba(1,1,1,.75)
+	background: linear-gradient(to top, #3717ad 0%, #3717ad 0.24%, #5b37df 99.51%, #5b37df 100%)
+	border-top: 1px solid #7455e4
+	height: 38px
+	padding: 0px 17px 0px 20px
+	+helios
+	+fs(16)
+	line-height: 28px
+	color: white
+	position: relative
+	text-decoration: none
+	&:hover
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 1)
+	&:active
+		top: 1px
+	
 
 
 

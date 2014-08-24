@@ -1,0 +1,58 @@
+
+.clear {
+	clear: both;
+}
+
+.time_limit_text, .time_limit_counter, .coupon_info_panel_in_preview_second .more_link {
+float: left;
+color: #fff;
+}
+.time_limit_text {
+font-size: 12px;
+font-style: italic;
+}
+.time_limit_counter {
+color: #ae929b;
+font-size: 10px;
+text-align: center;
+}
+.time_counter {
+border: none;
+background: none;
+}
+.time_bg{
+color: #fff;
+text-align: center;
+padding-top: 3px;
+overflow: hidden;
+height: 62px;
+padding: 3px 6px 0 5px;
+display: inline-block;
+background: none;
+}
+.time_counter span.middle {
+margin: 0 1px; }
+.time_counter span.middle2 {
+margin: 0 1px 0 0;
+}
+/* стили скрипта счетчика */
+.dash {
+float: left;
+}
+.dash .digit {
+	position: relative;
+	margin: 0px 3px;
+background: linear-gradient(to top, #e75b39 0%, #bf472a 49.24%, #e75b39 100%);
+border: 1px solid #e75b39;
+padding: 10px 19px;
+float: left;
+text-align: center;
+font-size: 33px;
+line-height: 42px;
+color: #fff;
+font-family: Arial;
+}
+.dash_title {
+	display: block;
+	float: left;
+}
