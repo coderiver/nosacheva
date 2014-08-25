@@ -15,7 +15,7 @@ html
 	top: 0px
 	left: 0px
 	right: 0px
-	z-index: 9999
+	z-index: 99999
 	text-align: center
 .top__block
 	width: 940px
@@ -34,8 +34,8 @@ html
 		display: inline-block
 		z-index: 999
 		margin-top: 12px
-		padding-top: 3px
-		height: 35px
+		padding-top: 5px
+		height: 33px
 .top__left
 	float: left
 	line-height: 29px
@@ -419,46 +419,62 @@ html
 	+clr
 	clear: both
 	margin-top: 30px
+	
+//
+
 .carousel
 	width: 100%
 	position: relative
-	.carousel__block
-		float: left
-		width: 100%
+	.empl__slides
+		+clr
+		position: relative
 		overflow: hidden
-		.carousel__item
-			float: left
+		width: 940px
+		margin: 0 auto
+		z-index: 999
+	.empl__slide
+		display: inline-block
+		vertical-align: bottom
+		text-align: center
+		text-decoration: none
+		font-size: 13px
+		color: #A0A0A0 
+		float: left
+		min-height: 100px 
+		position: relative
+		width: 235px
+		max-width: 235px
+		a
+			color: #a0a0a0 
+			text-decoration: none
+		img
+			display: block
+			margin: 0 auto
+		span
+			color: #4f4b4b
+			+fs(16)
+			line-height: 21px
+			+helios
 			width: 220px
-			margin-right: 20px
-			text-align: center
-			a
-				float: left
-				display: block
-				width: 100%
-				text-decoration: none
-				img
-					display: block
-					margin: 0 auto
-				span
-					color: #4f4b4b
-					+fs(16)
-					line-height: 21px
-					+helios
-					width: 220px
-					display: block
-					float: left
-					white-space: normal
-	.carousel__button
+			display: block
+			margin: 0 auto
+			white-space: normal
+	.empl__next,.empl__prev,.slick-next,.slick-prev
 		position: absolute
-		top: 80px
+		top: 80px 
+		cursor: pointer
+		+hide-text
 		z-index: 9999
 		cursor: pointer
-	#carousel__prev
-		left: -22px
-		+s(prev)
-	#carousel__next
-		right: -22px
+	.emple__next,.slick-next
 		+s(next)
+		right: 0 
+	.empl__prev,.slick-prev
+		+s(prev)
+		left: 0 
+
+
+
 		
 //review 3
 .camera
@@ -471,6 +487,12 @@ html
 	margin-right: 20px
 	text-align: center
 	float: left
+	.fancybox
+		float: left
+		width: 300px
+		margin-bottom: 20px
+		img
+			width: 300px
 	p
 		width: 280px
 		display: block
@@ -479,7 +501,6 @@ html
 		+fs(20)
 		line-height: 21px
 		color: #7d7d7d
-		margin-top: 20px
 	.review__line
 		margin: 0 auto
 		display: block
@@ -650,7 +671,6 @@ html
 	background: url(../img/top.png)
 	z-index: 9999
 	min-width: 1024px
-	display: none
 	form
 		width: 565px
 		margin: 0 auto
@@ -658,7 +678,7 @@ html
 		display: block
 		background: white
 		border-radius: 4px
-		padding: 30px 30px 50px 25px
+		padding: 30px 30px 30px 25px
 		box-shadow: 0 9px 21px rgba(0,1,1,.82)
 		h2
 			+fs(48)
@@ -697,7 +717,6 @@ html
 	background: url(../img/top.png)
 	z-index: 9999
 	min-width: 1024px
-	display: none
 	.popup__thx-b
 		width: 565px
 		margin: 0 auto
@@ -705,7 +724,7 @@ html
 		display: block
 		background: #e75b39
 		border-radius: 4px
-		padding: 30px 30px 50px 25px
+		padding: 30px 30px 30px 25px
 		color: white
 		text-align: center
 		box-shadow: 0 9px 21px rgba(0,1,1,.82)
@@ -734,12 +753,13 @@ html
 
 
 
+	
 
-
-
-
-
-
+//fb
+.fancybox
+	width: 220px
+	margin: 0 auto
+	display: block
 
 
 

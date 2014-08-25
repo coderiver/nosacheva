@@ -6,31 +6,18 @@
 	<meta name="viewport" content="initial-scale=1"/>
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script type="text/javascript" src="js/fancybox-eng.js"></script>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script language="Javascript" type="text/javascript" src="js/time.js"></script>
 </head>
 <body>
 <!-- BEGIN  out-->
 <div class="out">
-	<div class="popup__form">
-		<form action="">
-			<h2>Записаться в школу</h2>
-			<input type="text" placeholder="Имя">
-			<input type="email" placeholder="Е-мейл">
-			<input type="tel" placeholder="Телефон">
-			<input type="submit" value="Отправить" class="button-purple popup__form-submit">
-		</form>
-	</div>
-	<div class="popup__thx">
-		<div class="popup__thx-b">
-			<h3>Cпасибо за покупку</h3>
-			<i></i>
-			<p>Наши операторы свяжутся с вами по контактныму телефону, для связи с нами звоните по телефону<p>
-			<span>+7 (495) 560-80-90</span>
-		</div>
-	</div>
 	<div class="top">
 		<div class="top__block">
 			<div class="top__left"><span>школа ясновидения</span><h5>Носачевой</h5></div>
@@ -293,64 +280,40 @@
 			</div>
 			<div class="review__row">
 				<div class="carousel">
-					<div class="carousel__button" id="carousel__prev"></div>
-					<div class="carousel__button" id="carousel__next"></div>
-					<ul class="carousel__block cycle-slideshow"
-						data-cycle-fx="carousel"
-						data-cycle-timeout="0"
-						data-cycle-slides="> .carousel__item"		
-						data-cycle-prev="#carousel__prev"
-						data-cycle-next="#carousel__next"
-						data-cycle-carousel-visible="4">
-						<li class="carousel__item">
-							<a href="#" class="carousel__item">
-								<img src="img/c-item1.png" alt="">
-								<span>Сертификат преподавателя Натальи Носачевой</span>
-							</a>
-						</li>
-						<li class="carousel__item">
-							<a href="#" class="carousel__item">
-								<img src="img/c-item2.png" alt="">
-								<span>Диплом профессора народной медицины</span>
-							</a>
-						</li>
-						<li class="carousel__item">
-							<a href="#" class="carousel__item">
-								<img src="img/c-item3.png" alt="">
-								<span>Диплом программы «Битва экстрасенсов»</span>
-							</a>
-						</li>
-						<li class="carousel__item">
-							<a href="#" class="carousel__item">
-								<img src="img/c-item4.png" alt="">
-								<span>Сертификат «Медицина и целительство»</span>
-							</a>
-						</li>
-						<li class="carousel__item">
-							<a href="#" class="carousel__item">
-								<img src="img/c-item1.png" alt="">
-								<span>Сертификат преподавателя Натальи Носачевой</span>
-							</a>
-						</li>
-						<li class="carousel__item">
-							<a href="#" class="carousel__item">
-								<img src="img/c-item2.png" alt="">
-								<span>Диплом профессора народной медицины</span>
-							</a>
-						</li>
-						<li class="carousel__item">
-							<a href="#" class="carousel__item">
-								<img src="img/c-item3.png" alt="">
-								<span>Диплом программы «Битва экстрасенсов»</span>
-							</a>
-						</li>
-						<li class="carousel__item">
-							<a href="#" class="carousel__item">
-								<img src="img/c-item4.png" alt="">
-								<span>Сертификат «Медицина и целительство»</span>
-							</a>
-						</li>
-					</ul>
+					<div class="empl__slides js-slick">
+						<div class="empl__slide">
+											<a class="fancybox" href="img/c-item1.png" data-fancybox-group="gallery" title="Сертификат преподавателя Натальи Носачевой"><img src="img/c-item1.png" alt=""></a>
+											<span>Сертификат преподавателя Натальи Носачевой</span>
+						</div>
+						<div class="empl__slide">
+											<a class="fancybox" href="img/c-item2.png" data-fancybox-group="gallery" title="Диплом профессора народной медицины"><img src="img/c-item2.png" alt=""></a>
+											<span>Диплом профессора народной медицины</span>
+						</div>
+						<div class="empl__slide">
+											<a class="fancybox" href="img/c-item3.png" data-fancybox-group="gallery" title="Диплом программы «Битва экстрасенсов»"><img src="img/c-item3.png" alt=""></a>
+											<span>Диплом программы «Битва экстрасенсов»</span>
+						</div>
+						<div class="empl__slide">
+											<a class="fancybox" href="img/c-item4.png" data-fancybox-group="gallery" title="Сертификат «Медицина и целительство»"><img src="img/c-item4.png" alt=""></a>
+											<span>Сертификат «Медицина и целительство»</span>
+						</div>
+						<div class="empl__slide">
+											<a class="fancybox" href="img/c-item1.png" data-fancybox-group="gallery" title="Сертификат преподавателя Натальи Носачевой"><img src="img/c-item1.png" alt=""></a>
+											<span>Сертификат преподавателя Натальи Носачевой</span>
+						</div>
+						<div class="empl__slide">
+											<a class="fancybox" href="img/c-item2.png" data-fancybox-group="gallery" title="Диплом профессора народной медицины"><img src="img/c-item2.png" alt=""></a>
+											<span>Диплом профессора народной медицины</span>
+						</div>
+						<div class="empl__slide">
+											<a class="fancybox" href="img/c-item3.png" data-fancybox-group="gallery" title="Диплом программы «Битва экстрасенсов»"><img src="img/c-item3.png" alt=""></a>
+											<span>Диплом программы «Битва экстрасенсов»</span>
+						</div>
+						<div class="empl__slide">
+											<a class="fancybox" href="img/c-item4.png" data-fancybox-group="gallery" title="Сертификат «Медицина и целительство»"><img src="img/c-item4.png" alt=""></a>
+											<span>Сертификат «Медицина и целительство»</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -364,17 +327,17 @@
 			</div>
 			<div class="review__row">
 				<div class="review__video">
-					<img src="img/video.png" alt="">
+					<a href="http://www.youtube.com/embed/cYplvwBvGA4?enablejsapi=1&wmode=opaque" class="fancybox fancybox.iframe"><img src="img/video.png" alt=""></a>
 					<p>Участие и победа в проекте «Битва экстрасенсов»</p>
 					<span class="review__line"></span>
 				</div>
 				<div class="review__video">
-					<img src="img/video.png" alt="">
+					<a href="http://www.youtube.com/embed/cYplvwBvGA4?enablejsapi=1&wmode=opaque" class="fancybox fancybox.iframe"><img src="img/video.png" alt=""></a>
 					<p>Интервью для газеты «Московский Комсомолец»</p>
 					<span class="review__line"></span>
 				</div>
 				<div class="review__video is-last__col">
-					<img src="img/video.png" alt="">
+					<a href="http://www.youtube.com/embed/cYplvwBvGA4?enablejsapi=1&wmode=opaque" class="fancybox fancybox.iframe"><img src="img/video.png" alt=""></a>
 					<p>Съемка в различных программах телеканала ТНТ</p>
 					<span class="review__line"></span>
 				</div>
@@ -398,19 +361,19 @@
 				<div class="price__time">
 					<div class="time_limit_counter">
 						<div id="countdown_dashboard_60" class="time_counter">
-							<div class="dash days_dash">
+							<div class="dash days_dash"><div class="digit-bg"></div><div class="digit-bg"></div>
 								<span class="time_bg"><div class="digit">0</div><div class="digit">0</div></span>
 								<span class="time__heading">дней</span>
 							</div>
-							<div class="dash hours_dash">
+							<div class="dash hours_dash"><div class="digit-bg"></div><div class="digit-bg"></div>
 								<span class="time_bg middle"><div class="digit">0</div><div class="digit">0</div></span>
 								<span class="time__heading">часов</span>
 							</div>
-							<div class="dash minutes_dash">
+							<div class="dash minutes_dash"><div class="digit-bg"></div><div class="digit-bg"></div>
 								<span class="time_bg middle2"><div class="digit">0</div><div class="digit">0</div></span>
 								<span class="time__heading">минут</span>
 							</div>
-							<div class="dash seconds_dash">
+							<div class="dash seconds_dash"><div class="digit-bg"></div><div class="digit-bg"></div>
 								<span class="time_bg seconds"><div class="digit">0</div><div class="digit">0</div></span>
 								<span class="time__heading">секунд</span>
 							</div>

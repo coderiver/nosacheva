@@ -25,7 +25,7 @@ color: #fff;
 text-align: center;
 padding-top: 3px;
 overflow: hidden;
-height: 62px;
+height: 59px;
 padding: 3px 6px 0 5px;
 display: inline-block;
 background: none;
@@ -38,12 +38,11 @@ margin: 0 1px 0 0;
 /* стили скрипта счетчика */
 .dash {
 float: left;
+position: relative;
 }
 .dash .digit {
 	position: relative;
-	margin: 0px 3px;
-background: linear-gradient(to top, #e75b39 0%, #bf472a 49.24%, #e75b39 100%);
-border: 1px solid #e75b39;
+	margin: 0px 4px;
 padding: 10px 19px;
 float: left;
 text-align: center;
@@ -55,4 +54,16 @@ font-family: Arial;
 .dash_title {
 	display: block;
 	float: left;
+}
+.digit-bg {
+width: 60px;
+height: 59px;
+position: absolute;
+top: 24px;
+left: 72px;
+background: url(../img/time.png) center center;
+}
+.digit-bg:first-child {
+	top: 24px;
+	left: 7px;
 }

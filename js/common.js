@@ -3,6 +3,9 @@ head.ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
-
-	console.log($('body').html());
+	$('.js-slick').slick({
+		  infinite: true,
+		  slidesToShow: 4,
+		  slidesToScroll: 1,
+		});
 });
