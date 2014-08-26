@@ -14,6 +14,10 @@
 	<script type="text/javascript" src="js/fancybox-eng.js"></script>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script language="Javascript" type="text/javascript" src="js/time.js"></script>
+    <script src="http://api-maps.yandex.ru/1.1/index.xml?key=ANpUFEkBAAAAf7jmJwMAHGZHrcKNDsbEqEVjEUtCmufxQMwAAAAAAAAAAAAvVrubVT4btztbduoIgTLAeFILaQ==" type="text/javascript"></script>
+   
+    <script src="js/map.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/map.css">
 </head>
 <body>
 <!-- BEGIN  out-->
@@ -39,7 +43,7 @@
 	<div class="second">
 		<div class="second__block">
 			<div class="second__heading">
-				<i class="second__icon-h star"><i></i></i>
+				<i class="icon-h star"></i>
 				<h2>Мнение успешных людей</h2>
 				<h5>Они знают о чем говорят</h5>
 			</div>
@@ -74,7 +78,7 @@
 	<div class="second second_mod">
 		<div class="second__block">
 			<div class="second__heading">
-				<i class="second__icon-h like"><i></i></i>
+				<i class="icon-h like"></i>
 				<h2>Уникальное предложение</h2>
 				<h5>Жизнь как чудо сотворений</h5>
 			</div>
@@ -102,7 +106,7 @@
 	<div class="second">
 		<div class="second__block">
 			<div class="second__heading">
-				<i class="second__icon-h eye"><i></i></i>
+				<i class="icon-h eye"></i>
 				<h2>Проблемы и их решение</h2>
 				<h5>В каждой ситуации есть выход</h5>
 			</div>
@@ -207,7 +211,7 @@
 	<div class="second review">
 		<div class="second__block">
 			<div class="second__heading">
-				<i class="second__icon-h message"><i></i></i>
+				<i class="icon-h message"></i>
 				<h2>Отзывы о школе Носачевой</h2>
 				<h5>Мы помогаем людям и они это ценят</h5>
 			</div>
@@ -274,7 +278,7 @@
 	<div class="second second_mod review">
 		<div class="second__block">
 			<div class="second__heading">
-				<i class="second__icon-h hat"><i></i></i>
+				<i class="icon-h hat"></i>
 				<h2>Дипломы и награды</h2>
 				<h5>Каждому по трудам его</h5>
 			</div>
@@ -321,23 +325,23 @@
 	<div class="second review">
 		<div class="second__block">
 			<div class="second__heading">
-				<i class="second__icon-h camera"><i></i></i>
+				<i class="icon-h camera"></i>
 				<h2>СМИ о Наталье Носачевой</h2>
 				<h5>Мы учавствуем в общественной жизни</h5>
 			</div>
 			<div class="review__row">
 				<div class="review__video">
-					<a href="http://www.youtube.com/embed/cYplvwBvGA4?enablejsapi=1&wmode=opaque" class="fancybox fancybox.iframe"><img src="img/video.png" alt=""></a>
+					<iframe width="300" height="190" src="http://www.youtube.com/embed/m7aXhsh5utY" frameborder="0" allowfullscreen></iframe>
 					<p>Участие и победа в проекте «Битва экстрасенсов»</p>
 					<span class="review__line"></span>
 				</div>
 				<div class="review__video">
-					<a href="http://www.youtube.com/embed/cYplvwBvGA4?enablejsapi=1&wmode=opaque" class="fancybox fancybox.iframe"><img src="img/video.png" alt=""></a>
+					<iframe width="300" height="190" src="http://www.youtube.com/embed/XO6PUqzn944" frameborder="0" allowfullscreen></iframe>
 					<p>Интервью для газеты «Московский Комсомолец»</p>
 					<span class="review__line"></span>
 				</div>
 				<div class="review__video is-last__col">
-					<a href="http://www.youtube.com/embed/cYplvwBvGA4?enablejsapi=1&wmode=opaque" class="fancybox fancybox.iframe"><img src="img/video.png" alt=""></a>
+					<iframe width="300" height="190" src="http://www.youtube.com/embed/w1VOp8dT05U?list=PL_duQV7aLbfdbcwlWiL4xIxOGBXumWkBz" frameborder="0" allowfullscreen></iframe>
 					<p>Съемка в различных программах телеканала ТНТ</p>
 					<span class="review__line"></span>
 				</div>
@@ -408,16 +412,14 @@
 	<div class="second address">
 		<div class="second__block">
 			<div class="second__heading">
-				<i class="second__icon-h star"><i></i></i>
+				<i class="icon-h i-address"></i>
 				<h2>Адрес школы</h2>
 				<h5>Москва. ул. Кузнецкий мост, д.19, стр.1, этаж 4, офис №43</h5>
 				<p>Адрес проведения может измениться</p>
 			</div>
 		</div>
 	</div>
-	<div class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35928.02214007366!2d37.63249495!3d55.749792000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1408876105918" width="100%" height="645" frameborder="0" style="border:0"></iframe>
-	</div>
+	<div id="YMapsID" style="width:100%;height:645px"></div>
 </div>
 <!-- END out-->
 <!-- load scripts -->

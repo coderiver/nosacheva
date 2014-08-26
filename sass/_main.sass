@@ -22,6 +22,7 @@ html
 	margin: 0 auto
 	padding: 10px 10px 15px 10px
 	color: white
+	line-height: 28px
 	+clr
 	h5
 		margin-top: -4px
@@ -33,18 +34,16 @@ html
 		margin: 0 auto
 		display: inline-block
 		z-index: 999
-		margin-top: 12px
+		margin-top: 10px
 		padding-top: 5px
 		height: 33px
 .top__left
 	float: left
-	line-height: 29px
 	span
 		+fs(20)
 		+helioslight
 .top__right
 	float: right
-	line-height: 30px
 	span
 		+fs(13)
 		+helioslight
@@ -56,7 +55,7 @@ html
 	height: 685px
 	clear: both
 	+clr
-	background: url(../img/header-photo.png) no-repeat center top
+	background: url(../img/header-photo.jpg) no-repeat center top
 .header__block
 	margin: 0 auto
 	width: 940px
@@ -73,12 +72,12 @@ html
 		+ptserif
 		font-weight: normal
 		line-height: 48px
-		margin-bottom: 30px
+		margin-bottom: 48px
 	h5
 		+fs(28)
 		+helioslight
 		font-weight: normal
-		margin: 0 auto
+		width: 445px
 		display: block
 		line-height: 30px
 	.button-purple
@@ -89,7 +88,7 @@ html
 		height: 51px
 		padding: 7px 30px 0px 35px
 		display: inline-block
-		margin-top: 65px
+		margin-top: 66px
 //END HEADER
 
 //SECOND SECTION
@@ -100,13 +99,13 @@ html
 	+clr
 	text-align: center
 	padding-bottom: 71px
-	padding-top: 72px
+	padding-top: 70px
 	h2
 		+fs(48)
 		+ptserif
 		color: #5b38e0
 		line-height: 42px
-		margin-top: 35px
+		margin-top: 29px
 		font-weight: normal
 		width: 90%
 		padding: 0px 5% 0px 5%
@@ -114,31 +113,23 @@ html
 		+fs(28)
 		+helios
 		color: #909090
-		line-height: 42px
+		line-height: 31px
 		font-weight: normal
-		padding: 0px 5% 0px 5%
+		padding: 0px 5% 0px 5.5%
 .second__block
 	margin: 0 auto
 	width: 940px
-.second__icon-h
+.icon-h
 	display: block
 	margin: 0 auto
-	+s(second__icon-h)
 	position: relative
-	i
-		display: block
-		position: absolute
-		top: 20px
-		left: 20%
-		right: 20%
 .star
-	i
-		+s(star)
+	+s(i-star)
 .second__row
 	width: 100%
 	+clr
 	clear: both
-	margin-top: 30px
+	margin-top: 34px
 .second__col
 	display: inline-block
 	vertical-align: top
@@ -149,11 +140,12 @@ html
 		border-radius: 50%
 		overflow: hidden
 		margin: 0 auto
+		margin-bottom: 7px
 	.second__name
 		color: #4e4a4a
 		+helios
 		+fs(16)
-		line-height: 42px
+		line-height: 34px
 	p
 		color: #7d7d7d
 		+ptserif
@@ -164,17 +156,17 @@ html
 		display: block
 		width: 60px
 		border-bottom: 4px solid #e75b39
-		margin-top: 17px
+		margin-top: 16px
 		
 .like
-	i
-		+s(like)
+	+s(i-like)
 
 //second mod
 .second_mod
 	background: #fbfbfb
 	border-top: solid 1px #f4f4f4
 	border-bottom: solid 1px #f4f4f4
+	padding-bottom: 35px
 	.second__col
 		width: 211px
 		margin: 30px 10px
@@ -199,13 +191,10 @@ html
 			text-align: center
 			padding: 5px 6px 6px 6px
 			width: 40px
-			margin-bottom: 18px
+			margin-bottom: 15px
 //second
 .eye
-	i
-		margin-top: 9px
-		margin-left: 1px
-		+s(eye)
+	+s(i-eye)
 .second__row
 	ul
 		li
@@ -247,14 +236,14 @@ html
 .programm
 	width: 100%
 	+clr
-	background: url(../img/programm.png) no-repeat top center
+	background: url(../img/programm.jpg) no-repeat top center
 	text-align: center
 	float: left
 .programm__block
 	margin: 0 auto
 	width: 940px
 	padding-top: 60px
-	padding-bottom: 45px
+	padding-bottom: 47px
 	+clr
 	h2
 		+ptserif
@@ -284,7 +273,7 @@ html
 		height: 51px
 		display: inline-block
 		padding: 7px 25px 0px 25px
-		margin-top: 50px
+		margin-top: 39px
 .programm__col
 	float: left
 	width: 220px
@@ -311,7 +300,7 @@ html
 			line-height: 21px
 			border-bottom: 1px solid #5f5a6f
 			text-align: left
-			padding: 10px 0px
+			padding: 10px 0px 9px 0px
 			span
 				+fs(14)
 				+heliosbold
@@ -324,7 +313,7 @@ html
 .programm__form
 	width: 100%
 	background: #e85b39
-	padding: 40px 0px
+	padding: 41px 0px
 	form
 		width: 940px
 		margin: 0 auto
@@ -351,25 +340,21 @@ html
 			background: #e85b39
 //review
 .message
-	i
-		+s(message)
-		margin-top: 5px
-		margin-left: 2px
+	+s(i-message)
 .review__col
 	+helios
-	width: 235px
+	width: 245px
 	float: left
 	border: 1px solid #e85b39
 	padding: 30px 28px 30px 25px
-	margin-right: 20px
-	margin-bottom: 30px
 	min-height: 122px
+	margin: 13px 20px 25px 0px
 	h2
 		color: #e85b39
 		line-height: 40px
 		+helios
 		margin-top: 0px
-		margin-bottom: 10px
+		margin-bottom: 8px
 	p
 		color: #4f4b4b
 		+fs(22)
@@ -379,7 +364,6 @@ html
 	float: left
 	width: 440px
 	padding-right: 30px
-	margin-top: 5px
 	.review__avatar
 		width: 106
 		height: 106
@@ -396,7 +380,7 @@ html
 			+helios
 			+fs(16)
 			color: #4f4b4b
-			margin-bottom: 8px
+			margin-bottom: 6px
 			display: block
 		p
 			+ptserif
@@ -406,14 +390,12 @@ html
 			display: block
 			width: 60px
 			border-bottom: 4px solid #e75b39
-			margin-top: 17px
+			margin-top: 15px
 .is-right
 	float: right
 //review-2
 .hat
-	i
-		+s(hat)
-		margin-top: 6px
+	+s(i-hat)
 .review__row
 	width: 100%
 	+clr
@@ -425,6 +407,7 @@ html
 .carousel
 	width: 100%
 	position: relative
+	padding-top: 10px
 	.empl__slides
 		+clr
 		position: relative
@@ -447,6 +430,7 @@ html
 		a
 			color: #a0a0a0 
 			text-decoration: none
+			margin-bottom: 22px
 		img
 			display: block
 			margin: 0 auto
@@ -478,25 +462,17 @@ html
 		
 //review 3
 .camera
-	i
-		+s(camera)
-		margin-top: -1px
-		margin-left: 2px
+	+s(i-camera)
 .review__video
 	width: 300px
 	margin-right: 20px
 	text-align: center
 	float: left
-	.fancybox
-		float: left
-		width: 300px
-		margin-bottom: 20px
-		img
-			width: 300px
 	p
 		width: 280px
 		display: block
 		margin: 0 auto
+		margin-top: 20px
 		+ptserif
 		+fs(20)
 		line-height: 21px
@@ -650,6 +626,8 @@ html
 		+fs(16)
 		line-height: 18px
 		margin-top: 10px
+.i-address
+	+s(i-address)
 //map
 .map
 	float: left
